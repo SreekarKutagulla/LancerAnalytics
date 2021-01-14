@@ -39,7 +39,7 @@ else:
 
 #print(sample_data)
 counter = 0
-print('Miami Heat at Philadelphia 76ers, January 12, 2021 PER: ')
+print('Dallas Mavericks at Charlotte Hornets Box Score, January 13, 2021 PER: ')
 for i in sample_data.Starters:
   playerIndex = names.index(i)
   playerProfile = sample_data.loc[playerIndex, :]
@@ -66,8 +66,8 @@ for i in sample_data.Starters:
   playerProfile = sample_data.loc[playerIndex, :]
   x.append(float(calculatePER(playerProfile.PTS, playerProfile.FGA - playerProfile.THREEPA, playerProfile.THREEP, playerProfile.FT, playerProfile.FTA, playerProfile.TRB, playerProfile.AST, playerProfile.BLK, playerProfile.STL, playerProfile.TOV)))
 plt.xlabel('PER Rating')
-plt.ylabel('Miami Heat Players')
-plt.title('Miami Heat at Philadelphia 76ers, January 12, 2021')
+plt.ylabel('Dallas Mavericks Players')
+plt.title('Dallas Mavericks at Charlotte Hornets Box Score, January 13, 2021')
 plt.barh(y, x, align = 'center', alpha = 0.5, color = 'pink')
 scale_factor = 1
 plt.xlim(0 * scale_factor, 50 * scale_factor)
