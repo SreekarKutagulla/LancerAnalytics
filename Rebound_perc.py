@@ -46,11 +46,28 @@ for i in my_team.Starters:
   y.append(str(i))
   playerIndex = names.index(i)
   playerProfile = my_team.loc[playerIndex, :]
-  x.append(str(int(calculateRebPercentage(playerProfile.TRB, playerProfile.MP))))
+  x.append(int(calculateRebPercentage(playerProfile.TRB, playerProfile.MP)))
 plt.xlabel('Rebounding Percentage')
 plt.ylabel('Miami Heat Players')
 plt.title('Miami Heat at Philadelphia 76ers, January 12, 2021')
 plt.barh(y, x, align = 'center', alpha = 0.5, color = 'pink')
 scale_factor = 0.2
-plt.xlim(0 * scale_factor, 50 * scale_factor)
-plt.savefig('bar.jpg',bbox_inches='tight', dpi=150)
+plt.xlim(0 * scale_factor, 70 * scale_factor)
+plt.savefig('bar.jpg',bbox_inches='tight', dpi=200)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
