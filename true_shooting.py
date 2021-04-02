@@ -60,7 +60,7 @@ print(rate(count))
 
 
 
-#Caclulates the PER for thr whole team
+#Calculates the PER for the whole team
 
 
 #print(sample_data)
