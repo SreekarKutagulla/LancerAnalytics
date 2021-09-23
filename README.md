@@ -1,6 +1,6 @@
 # Lancer Analytics
 
-## This is a Saint Francis based club 
+
 
 ## Our Goal
 
@@ -20,4 +20,13 @@ Our data is used from **Hudl**. We manually, or by computer vision, input data i
 
 Currently, we are analyzing and running prediction models for specifically football, basketball, and baseball. Future sports for consideration are tennis, water polo, and/or soccer.
 
+
+# File Structure
+
+## Main
+The ```main``` folder serves to hold our code and is divided into sub categories based on the sport that we analyze. Within the sport folders are different aspects of that sport, where data is specially recorded and used for models and/or predictions.
+
+## Data
+
+The ```data``` folder is used to store all Excel and/or Google Sheet data that is used to collect **Hudl** data. The spreadsheets will most commonly have an XSLX file format, as R is able to read and properly store Excel sheet formats.
 
