@@ -1,6 +1,6 @@
 # Lancer Analytics
 
-## ** This is a Saint Francis based club **
+## This is a Saint Francis based club 
 
 ## Our Goal
 
