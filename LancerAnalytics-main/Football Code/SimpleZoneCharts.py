@@ -12,7 +12,7 @@ for filename in glob.glob('*'):
   if '.txt' in filename:
     os.remove(filename)
 
-sys.stdout = open('tables.txt', 'w')
+sys.stdout = open('charts.txt', 'w')
 
 data_df = pd.read_csv('data.csv')
 data_df = data_df.rename(columns={'PLAY #': 'PLAY_#', 'YARD LN': 'YARD_LN', 'PLAY TYPE': 'PLAY_TYPE', 'OFF FORM': 'OFF_FORM', 'OFF PLAY': 'OFF_PLAY','OFF STR': 'OFF_STR', 'PLAY DIR': 'PLAY_DIR', 'PASS ZONE':'PASS_ZONE', 'DEF FRONT':'DEF_FRONT'})
