@@ -25,8 +25,8 @@ updateWithInput("16")
 # saveToImage("Strikes16")
 
 
-# generateHeatmapsFromPlayer("23")
-# generateHeatmapsFromPlayer("16")
+# generateHeatmapsFromPlayer("23", False)
+# generateHeatmapsFromPlayer("16", False)
 
 
 show()

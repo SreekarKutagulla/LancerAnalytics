@@ -13,13 +13,13 @@ def myplot(x, y, s, bins=1000):
     extent = [xedges[0], xedges[-1], yedges[0], yedges[-1]]
     return heatmap.T, extent
 
-def generateHeatmapsFromPlayer(playerNum):
+def generateHeatmapsFromPlayer(playerNum, saving):
 
     data = openPLayer(playerNum)
-    generateHeatmaps(data)
+    generateHeatmaps(data, playerNum, saving)
 
 
-def generateHeatmaps(data):
+def generateHeatmaps(data, playerNum, saving):
     fig, axs = plt.subplots(2, 2)
 
     sigmas = [0, 16, 32, 64]
@@ -32,5 +32,8 @@ def generateHeatmaps(data):
             img, extent = myplot(data.X, data.Y, s)
             ax.imshow(img, extent=extent, origin='lower', cmap=cm.jet)
             ax.set_title("sigma %d" % s)
+            if(s == 64 and saving):
+                file = '' + getMonthDay() + str(playerNum) +  'heatmap.png'
+                plt.savefig(file, bbox_inches='tight', dpi=150)
 
     plt.show()
