@@ -104,29 +104,6 @@ def updateWithInput(playerNum):
 def show():
     plt.show()
 
-
-def showHeat(playerNum):
-    df = openPLayer(playerNum)
-
-    setup()
-
-    heatmap, xedges, yedges = np.histogram2d(df.X, df.Y, bins=50)
-    extent = [xedges[8], xedges[-2], yedges[8], yedges[-2]]
-    # plt.clf()
-    plt.imshow(heatmap.T, extent=extent, origin='lower', cmap = 'autumn', interpolation = 'nearest')
-
-    plt.show()
-
-    # fig, ((ax, ax2), (ax3, ax4)) = plt.subplots(2, 2, figsize=(8, 6))
-    # plt.heatmap(df.X, df.Y, ax=ax2, vmin=0,
-    #                 cmap="magma_r", cbarlabel="quality")
-    # plt.annotate_heatmap(im, valfmt="{x:d}", size=7, threshold=20,
-    #                  textcolors=("red", "white"))
-
-
-
-    # plt.savefig('baseball.png', bbox_inches='tight', dpi=150)
-
 def saveToImage(num):
     file = '' + getMonthDay() + num + 'pitches.png'
     plt.savefig(file , bbox_inches='tight', dpi=150)

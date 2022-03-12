@@ -13,10 +13,14 @@ def myplot(x, y, s, bins=1000):
     extent = [xedges[0], xedges[-1], yedges[0], yedges[-1]]
     return heatmap.T, extent
 
-def generateHeatmaps(playerNum):
-    fig, axs = plt.subplots(2, 2)
+def generateHeatmapsFromPlayer(playerNum):
 
     data = openPLayer(playerNum)
+    generateHeatmaps(data)
+
+
+def generateHeatmaps(data):
+    fig, axs = plt.subplots(2, 2)
 
     sigmas = [0, 16, 32, 64]
 
