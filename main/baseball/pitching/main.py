@@ -3,7 +3,17 @@ from setup import *
 from heatMap import *
 from determineValue import *
 
-updateWithInput("23")
+# updateWithInput("17")
+# saveToImage("17")
+# updateWithInput("15")
+# saveToImage("15")
+# updateWithInput("20")
+# saveToImage("20")
+
+# generateHeatmapsFromPlayer("15", True)
+generateHeatmapsFromPlayer("17", True)
+generateHeatmapsFromPlayer("20", True)
+
 # saveToImage("23")
 
 # plotScatterWithType("23", "H")
@@ -14,7 +24,7 @@ updateWithInput("23")
 # saveToImage("Strikes23")
 
 
-updateWithInput("16")
+# updateWithInput("16")
 # saveToImage("16")
 
 # plotScatterWithType("16", "H")
