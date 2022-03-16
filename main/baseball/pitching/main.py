@@ -11,8 +11,9 @@ from determineValue import *
 # saveToImage("20")
 
 # generateHeatmapsFromPlayer("15", True)
-generateHeatmapsFromPlayer("17", True)
-generateHeatmapsFromPlayer("20", True)
+# generateHeatmapsFromPlayer("17", True)
+# generateHeatmapsFromPlayer("20", True)
+#TODO create infrastructure for opponents
 
 # saveToImage("23")
 
