@@ -2,18 +2,19 @@
 from setup import *
 from heatMap import *
 from determineValue import *
+from util import *
 
-# updateWithInput("17")
-# saveToImage("17")
-# updateWithInput("15")
-# saveToImage("15")
-# updateWithInput("20")
-# saveToImage("20")
+#lancers
+plotAndSaveAllTypesIndividually("13")
+plotAndSaveAllTypesIndividually("20")
 
-# generateHeatmapsFromPlayer("15", True)
-# generateHeatmapsFromPlayer("17", True)
+#padres
+# updateWithInput("opp13")
+
+
+# generateHeatmapsFromPlayer("13", True)
 # generateHeatmapsFromPlayer("20", True)
-#TODO create infrastructure for opponents
+# generateHeatmapsFromPlayer("20", True)
 
 # saveToImage("23")
 
